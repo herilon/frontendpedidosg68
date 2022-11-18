@@ -1,0 +1,17 @@
+<a routerLink="/productos/crear" class="btn">Crear producto</a>
+<table class="striped">
+    <thead>
+      <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Imagen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of productos">
+        <td>{{producto.nombre}}</td>
+        <td>{{producto.precio}}</td>
+        <td><img src="{{producto.imagen}}" alt="imagen"></td>
+      </tr>
+    </tbody>
+  </table>
