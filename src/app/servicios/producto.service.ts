@@ -20,5 +20,5 @@ export class ProductoService {
 
   crearProducto(producto: Producto): Observable<Producto>{
     return this.http.post<Producto>(`${this.url}/productos`, producto);
-}
+  }
 }
